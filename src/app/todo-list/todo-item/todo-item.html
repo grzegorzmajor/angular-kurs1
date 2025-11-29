@@ -1,0 +1,5 @@
+<li>
+  <input class="todo-checkbox" type="checkbox" (change)="changeTodoStatus(index)" [checked]="todo.isComplete">
+  <span [ngClass]="{'color-green': todo.isComplete, 'color-red': !todo.isComplete}" class="color-green">{{ index + 1 }}. {{ todo.name }}</span>
+  <button class="todo-button2" (click)="deleteTodo(index)">&#10005;</button>
+</li>

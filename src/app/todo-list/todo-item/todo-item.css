@@ -1,0 +1,23 @@
+
+
+.todo-checkbox {
+  margin-right: 8px;
+}
+
+.todo-button2 {
+  margin-left: 8px;
+  width: 23px;
+  height: 25px ;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+
+.color-green {
+  color: green;
+}
+.color-red {
+  color: red;
+}
+
