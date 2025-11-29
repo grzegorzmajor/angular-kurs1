@@ -1,0 +1,12 @@
+.footer-text {
+  padding: 10px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+  border-top: darkorange solid 4px;
+  background: #ffbe73;
+}

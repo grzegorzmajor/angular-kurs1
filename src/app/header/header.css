@@ -1,0 +1,26 @@
+.navbar-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: calc(10px + 2vmin);
+  color: orange;
+  background: black;
+}
+.navbar-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+.navbar-item {
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: orange solid 1px;
+  border-radius: 10px;
+}
+.navbar-item:hover {
+  background: orange;
+  color: black;
+}
