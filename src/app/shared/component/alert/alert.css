@@ -1,0 +1,14 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: rgba(205, 92, 92, 0.59);
+  padding: 20px;
+  width: calc( 100vw - 20px );
+}
+
+.alert-close {
+  width: 25px;
+  height: 25px;
+}

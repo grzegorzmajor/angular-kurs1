@@ -1,23 +1,9 @@
-.paragraph-bottom {
-  margin: 10px;
+.todo-list {
+  margin: 10px 50px;
+
 }
-.form-todo-input1 {
-  margin: 10px;
-  padding: 5px;
-  width: calc( 100vw - 20px);
-}
-.todo-button1 {
-  margin: 10px;
-  padding: 5px;
-  background: darkorange;
-  border: orange solid 2px;
-  border-radius: 10px;
-  color: antiquewhite;
-  font-weight: bolder;
-  font-size: large;
-  cursor: pointer;
-}
-.todo-button1:hover {
-  background: antiquewhite;
-  color: darkorange;
+
+.todo-list-items {
+  list-style-type: none;
+  padding: 10px;
 }

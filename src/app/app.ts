@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {Header} from './header/header';
 import {TodoList} from './todo-list/todo-list';
 import {Footer} from './footer/footer';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import {Footer} from './footer/footer';
     RouterOutlet,
     Header,
     TodoList,
-    Footer
+    Footer,
+    CommonModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

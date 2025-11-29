@@ -1,4 +1,18 @@
-<p class="paragraph-bottom">Dodaj nowe zadanie:</p>
-<input type="text" #todoName class="form-todo-input1" name="todo-input1">
-<button type="button" class="todo-button1" (click)="addTodo(todoName.value)">Dodaj</button>
+<app-add-todo (addTodoEvent)="addTodo($event)"></app-add-todo>
 
+@if (errorMessage) {
+  <app-alert [errorMessage]="errorMessage" (closeAlert)="clearErrorMessage()"></app-alert>
+}
+
+@if (todos.length > 0) {
+  <div class="todo-list">
+    <h4>Obecne zadania</h4>
+    <ul class="todo-list-items">
+      @for (todo of todos; track $index; let i = $index) {
+        <app-todo-item [todo]="todo" [index]="i" (todoStatusChanged)="changeTodoStatus($event)" (todoDeleted)="deleteTodo($event)"></app-todo-item>
+      }
+    </ul>
+  </div>
+} @else {
+  <p class="text-center">Brak dodanych zadań.</p>
+}
